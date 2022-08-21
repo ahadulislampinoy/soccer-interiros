@@ -1,0 +1,26 @@
+#banner {
+  background: #000;
+  height: 70vh;
+}
+.banner-title {
+  color: #ff5e19;
+  font-family: "Berkshire Swash", cursive;
+  background: url(images/banner-bg.png) no-repeat top center;
+  font-size: 4.5rem;
+}
+.banner-desc {
+  color: #fff;
+  font-size: 1.15rem;
+}
+main {
+  background-color: #151515;
+  padding: 4.5rem 0 10rem 0;
+}
+.custom-btn {
+  background: #015196;
+  padding: 5px 0;
+}
+footer {
+  background-color: #151515;
+  padding: 3rem 0 1.5rem 0;
+}
