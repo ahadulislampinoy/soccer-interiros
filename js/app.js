@@ -1,4 +1,4 @@
-// selected part called functions
+// calling function for excuet calculations
 getName("messi-btn");
 getName("neymar-btn");
 getName("mbappe-btn");

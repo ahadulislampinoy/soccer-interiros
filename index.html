@@ -116,21 +116,31 @@
                             <h3 class="text-center border border-secondary p-3">Budget</h3>
                             <div class="d-flex justify-content-between py-3">
                                 <label for="">Per Player</label>
-                                <input class="bg-transparent text-white w-50 border border-1" type="text">
+                                <input id="per-player-input" class="bg-transparent text-white w-50 border border-1"
+                                    type="text">
                             </div>
-                            <button class="custom-btn w-100 text-white">Calculate</button>
+                            <button id="calculate" class="custom-btn w-100 text-white">Calculate</button>
                             <div class="pt-3">
-                                <p>Player Expenses<span id="player-expenses"></span></p>
+                                <div class="d-flex justify-content-between">
+                                    <p>Player Expenses</p>
+                                    <span id="player-expenses"></span>
+                                </div>
                                 <div class="d-flex justify-content-between pb-3">
                                     <label for="">Manager</label>
-                                    <input class="bg-transparent text-white w-50 border border-1" type="text">
+                                    <input id="manager-input" class="bg-transparent text-white w-50 border border-1"
+                                        type="text">
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <label for="">Coach</label>
-                                    <input class="bg-transparent text-white w-50 border border-1" type="text">
+                                    <input id="coach-input" class="bg-transparent text-white w-50 border border-1"
+                                        type="text">
                                 </div>
-                                <button class="custom-btn w-100 text-white my-3">Calculate Total</button>
-                                <p class="fw-bold">Total <span id="total"></span></p>
+                                <button id="calculate-total" class="custom-btn w-100 text-white my-3">Calculate
+                                    Total</button>
+                                <div class="d-flex justify-content-between fw-bold">
+                                    <p>Player Expenses</p>
+                                    <span id="total-expenses"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,7 +163,7 @@
         crossorigin="anonymous"></script>
     <!-- js files -->
     <script src="js/utilities.js"></script>
-    <script src="js/selected.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/budget.js"></script>
 </body>
 
