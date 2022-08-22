@@ -23,7 +23,7 @@ function getName(btnId) {
     // Creating and styling the list
     const li = document.createElement("li");
     li.innerText = title;
-    li.style.fontSize = "1.5rem";
+    li.style.fontSize = "1.35rem";
     ol.appendChild(li);
     // append orderd list into selected-part
     const selectedPart = document.getElementById("selected-part");
