@@ -1,3 +1,4 @@
+/* Banner start */
 #banner {
   background: #000;
   height: 70vh;
@@ -12,6 +13,7 @@
   color: #fff;
   font-size: 1.15rem;
 }
+/* Banner end */
 main {
   background-color: #151515;
   padding: 4.5rem 0 10rem 0;

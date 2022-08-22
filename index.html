@@ -114,34 +114,38 @@
                     <div class="card text-white border-secondary">
                         <div class="card-body bg-black ">
                             <h3 class="text-center border border-secondary p-3">Budget</h3>
+                            <!-- Per player part start -->
                             <div class="d-flex justify-content-between py-3">
                                 <label for="">Per Player</label>
-                                <input id="per-player-input" class="bg-transparent text-white w-50 border border-1"
+                                <input id="per-player-input" class="bg-transparent text-white w-50 border border-1 ps-1"
                                     type="text">
                             </div>
                             <button id="calculate" class="custom-btn w-100 text-white">Calculate</button>
+                            <!-- Per player part end -->
+                            <!-- Player expenses start -->
                             <div class="pt-3">
                                 <div class="d-flex justify-content-between">
                                     <p>Player Expenses</p>
-                                    <span id="player-expenses"></span>
+                                    <span>$<span id="player-expenses"></span></span>
                                 </div>
                                 <div class="d-flex justify-content-between pb-3">
                                     <label for="">Manager</label>
-                                    <input id="manager-input" class="bg-transparent text-white w-50 border border-1"
-                                        type="text">
+                                    <input id="manager-input"
+                                        class="bg-transparent text-white w-50 border border-1 ps-1" type="text">
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <label for="">Coach</label>
-                                    <input id="coach-input" class="bg-transparent text-white w-50 border border-1"
+                                    <input id="coach-input" class="bg-transparent text-white w-50 border border-1 ps-1"
                                         type="text">
                                 </div>
                                 <button id="calculate-total" class="custom-btn w-100 text-white my-3">Calculate
                                     Total</button>
                                 <div class="d-flex justify-content-between fw-bold">
-                                    <p>Player Expenses</p>
-                                    <span id="total-expenses"></span>
+                                    <p>Total</p>
+                                    <span style="color:#ff5e19;">$<span id="total-expenses"></span></span>
                                 </div>
                             </div>
+                            <!-- Player expenses end -->
                         </div>
                     </div>
                 </div>

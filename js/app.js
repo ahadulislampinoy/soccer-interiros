@@ -1,4 +1,4 @@
-// calling function for excuet calculations
+// Calling function from utilities.js for excuet all calculations
 getName("messi-btn");
 getName("neymar-btn");
 getName("mbappe-btn");
