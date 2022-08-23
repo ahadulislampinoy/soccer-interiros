@@ -9,7 +9,7 @@ function getInputValue(inputId) {
 // Creating ordered list
 let ol = document.createElement("ol");
 function getName(btnId) {
-  // ------ Selected Part Start ------
+  // <------ Selected Part Start ------>
   document.getElementById(btnId).addEventListener("click", function () {
     //  alert - if want to select more then 5 player
     if (ol.children.length > 4) {
@@ -29,11 +29,11 @@ function getName(btnId) {
     const selectedPart = document.getElementById("selected-part");
     selectedPart.appendChild(ol);
     // After clicking button, button will be disabled and changed background-color
-    buttonElement.setAttribute("disabled", "");
+    buttonElement.setAttribute("disabled", true);
     buttonElement.style.background = "#20273A";
-    // ------ Selected Part End ------
+    // <------ Selected Part End ------>
 
-    // ------ Budget Part Start ------
+    // <------ Budget Part Start ------>
     //  Calculating selected players expenses
     document.getElementById("calculate").addEventListener("click", function () {
       // Getting total number of selected player
@@ -43,8 +43,8 @@ function getName(btnId) {
       const allPlayerAmount = perPlayerAmount * playerTotal;
       const playerExpensesElement = document.getElementById("player-expenses");
       playerExpensesElement.innerText = allPlayerAmount;
+      // Calculating selected players, manager and coach total expenses
       document
-        // Calculating selected players, manager and coach total expenses
         .getElementById("calculate-total")
         .addEventListener("click", function () {
           const managerAmount = getInputValue("manager-input");
@@ -54,7 +54,7 @@ function getName(btnId) {
           const totalExpensesElement =
             document.getElementById("total-expenses");
           totalExpensesElement.innerText = totalExpenses;
-          // ------ Budget Part End ------
+          // <------ Budget Part End ------>
         });
     });
   });
